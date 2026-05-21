@@ -8,6 +8,8 @@ description: >-
 theme: jekyll-theme-minimal
 
 # Site settings
+url: https://haderob.github.io
+baseurl: ""
 logo: /assets/img/profile.png
 show_downloads: false
 

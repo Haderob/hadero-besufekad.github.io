@@ -1,0 +1,49 @@
+title: Besufekad T. Hadero
+description: >-
+  M.S. Candidate in Computer Science and Technology at Northwestern Polytechnical University.
+  Research interests include visual SLAM, 3D Gaussian Splatting, monocular depth estimation,
+  and multimodal perception for autonomous systems.
+
+# Use the minimal theme with custom overrides
+theme: jekyll-theme-minimal
+
+# Site settings
+logo: /assets/img/profile.png
+show_downloads: false
+
+# Social links
+email: haderob4@mail.nwpu.edu.cn
+github_username: hadero-besufekad
+linkedin_username: # your-linkedin-username
+google_scholar: # your Google Scholar ID
+twitter_username: # your Twitter handle
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: CV
+    url: /cv/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# GitHub Pages compatibility
+safe: true
+incremental: false

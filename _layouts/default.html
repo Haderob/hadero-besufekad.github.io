@@ -5,22 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | absolute_url }}">
   {% seo %}
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
       {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Profile" style="max-width: 180px; border-radius: 8px; margin-bottom: 16px;" />
+        <img src="{{ site.logo | absolute_url }}" alt="Profile" style="max-width: 180px; border-radius: 8px; margin-bottom: 16px;" />
       {% endif %}
       <p>{{ site.description | default: site.github.project_tagline }}</p>
 
       <nav>
         <ul class="nav-list">
           {% for item in site.navigation %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            <li><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </nav>
@@ -50,6 +50,6 @@
       <p><small>Hosted on GitHub Pages — Theme based on <a href="https://github.com/pages-themes/minimal">Minimal</a></small></p>
     </footer>
   </div>
-  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/scale.fix.js' | absolute_url }}"></script>
 </body>
 </html>

@@ -16,13 +16,12 @@ phone: "(+86) 132-2800-2068"
 location: "Xi'an, China"
 github_username: hadero-besufekad
 linkedin_username: hadero-besufekad
-google_scholar_url: ""
+google_scholar_url: "https://scholar.google.com/citations?user=NMbPZcYAAAAJ&hl=en"
+x_url: "https://x.com/besufekad_tad"
 
 navigation:
   - title: Home
     url: /
-  - title: About
-    url: /about/
   - title: Research
     url: /research/
   - title: Publications

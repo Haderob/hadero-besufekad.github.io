@@ -84,7 +84,8 @@ permalink: /cv/
       <ul>
         <li>CSC Scholarship, 1st prize, Ministry of Education of China, 2023.</li>
         <li>SUSTech School Scholarship, 1st prize, 2021.</li>
-        <li>Betre-Science Scholarship, Top 1%, Ethiopia Government, 2017.</li>
+        <li>Betre-Science Scholarship, Top 1%, 2017.</li>
+        <li>Machine Learning Specialization certificates from Coursera, 2021.</li>
       </ul>
     </article>
   </div>

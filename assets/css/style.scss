@@ -236,6 +236,38 @@ a:hover {
   font-weight: 600;
 }
 
+.profile-actions {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.profile-actions .button {
+  justify-content: center;
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.social-links a {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--accent-dark);
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 0.35rem 0.55rem;
+}
+
+.social-links a:hover {
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

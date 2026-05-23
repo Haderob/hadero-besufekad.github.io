@@ -19,7 +19,8 @@ permalink: /contact/
       <h2>Profiles</h2>
       <p><strong>GitHub:</strong> <a href="https://github.com/{{ site.github_username }}">@{{ site.github_username }}</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">{{ site.linkedin_username }}</a></p>
-      <p><strong>Google Scholar:</strong> TODO: confirm Google Scholar profile URL.</p>
+      <p><strong>Google Scholar:</strong> <a href="{{ site.google_scholar_url }}">Profile</a></p>
+      <p><strong>X:</strong> <a href="{{ site.x_url }}">@besufekad_tad</a></p>
     </article>
   </div>
 </section>

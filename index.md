@@ -52,12 +52,13 @@ permalink: /
       <strong>Outstanding Graduate, Northwestern Polytechnical University.</strong>
     </div>
     <div class="timeline__item">
-      <div class="timeline__date">Aug 2025</div>
-      <strong>First-author IEEE Internet of Things Journal article accepted</strong> on Gaussian Splatting for next-generation SLAM.
-    </div>
-    <div class="timeline__item">
       <div class="timeline__date">Oct 2025 - Present</div>
       <strong>Industry internship in COLMAP-to-3DGS reconstruction optimization</strong> in Xi'an, China.
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__date">Aug 2025</div>
+      <strong>First-author IEEE Internet of Things Journal article accepted</strong> on Gaussian Splatting for next-generation SLAM.
+    
     </div>
     <div class="timeline__item">
       <div class="timeline__date">Sep 2023 - Jun 2026</div>

@@ -30,6 +30,9 @@ permalink: /
         <dt>Location</dt>
         <dd>{{ site.location }}</dd>
       </div>
+        <dt>Email</dt>
+        <dd>haderob4@gmail.com, haderob4@mail.nwpu.edu.cn</dd>
+      </div>
     </dl>
     <div class="profile-actions">
       <a class="button" href="mailto:{{ site.email }}">Contact Me</a>
@@ -37,7 +40,6 @@ permalink: /
         <a href="https://github.com/{{ site.github_username }}">GitHub</a>
         <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
         <a href="{{ site.google_scholar_url }}">Google Scholar</a>
-        <a href="mailto:{{ site.email }}">Email</a>
         <a href="{{ site.x_url }}">X</a>
       </div>
     </div>

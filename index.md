@@ -48,7 +48,7 @@ permalink: /
   <h2>Highlights</h2>
   <div class="timeline">
     <div class="timeline__item">
-      <div class="timeline__date">2026</div>
+      <div class="timeline__date">Mar 2026</div>
       <strong>Outstanding Graduate, Northwestern Polytechnical University.</strong>
     </div>
     <div class="timeline__item">

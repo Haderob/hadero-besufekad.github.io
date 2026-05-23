@@ -45,6 +45,24 @@ permalink: /
 </section>
 
 <section class="section">
+  <h2>Highlights</h2>
+  <div class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__date">2025</div>
+      <strong>First-author IEEE Internet of Things Journal article accepted</strong> on Gaussian Splatting for next-generation SLAM.
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__date">Oct 2025 - Present</div>
+      <strong>Industry internship in COLMAP-to-3DGS reconstruction optimization</strong> in Xi'an, China.
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__date">Sep 2023 - Jun 2026</div>
+      <strong>M.S. in Computer Science and Technology</strong> at Northwestern Polytechnical University.
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <h2>About</h2>
   <div class="grid grid--two">
     <article class="panel">
@@ -52,27 +70,17 @@ permalink: /
       <p>I work at the intersection of geometric vision, machine learning, and robot perception. My goal is to build perception systems that help robots and UAVs understand large, changing environments with dense, scalable, and reliable 3D representations.</p>
       <p>My recent work studies how feed-forward depth and pose priors can support Gaussian-based SLAM systems for UAV and outdoor mapping, especially when compute and memory are limited. I am particularly interested in robust 3D world models that support navigation, relocalization, motion generation, and intelligent decision-making.</p>
     </article>
-    <article class="panel">
-      <h3>Education</h3>
-      <div class="timeline">
-        <div class="timeline__item">
-          <div class="timeline__date">Sep 2023 - Jun 2026</div>
-          <strong>M.S. in Computer Science and Technology</strong>
-          <p>Northwestern Polytechnical University, Xi'an, China. Advisor: Prof. Yang Tao. Research topic: SLAM, three-dimensional visual perception, and computer vision.</p>
-        </div>
-        <div class="timeline__item">
-          <div class="timeline__date">Sep 2017 - Jul 2021</div>
-          <strong>B.S. in Mechatronics, with Honors</strong>
-          <p>University of Electronic Science and Technology of China, Chengdu, China.</p>
-        </div>
-      </div>
-    </article>
+
   </div>
 </section>
 
 <section class="section">
   <h2>Research Interests</h2>
   <div class="grid grid--three">
+    <article class="card">
+      <h3>VLA and Embodied AI</h3>
+      <p>Robust 3D world models that connect perception with navigation, planning, and intelligent action in physical systems.</p>
+    </article>
     <article class="card">
       <h3>Visual SLAM and 3D Mapping</h3>
       <p>Real-time localization and dense scene reconstruction for drones, robots, and autonomous systems.</p>
@@ -92,23 +100,6 @@ permalink: /
   </div>
 </section>
 
-<section class="section">
-  <h2>Highlights</h2>
-  <div class="timeline">
-    <div class="timeline__item">
-      <div class="timeline__date">2025</div>
-      <strong>First-author IEEE Internet of Things Journal article accepted</strong> on Gaussian Splatting for next-generation SLAM.
-    </div>
-    <div class="timeline__item">
-      <div class="timeline__date">Oct 2025 - Present</div>
-      <strong>Industry internship in COLMAP-to-3DGS reconstruction optimization</strong> in Xi'an, China.
-    </div>
-    <div class="timeline__item">
-      <div class="timeline__date">Sep 2023 - Jun 2026</div>
-      <strong>M.S. in Computer Science and Technology</strong> at Northwestern Polytechnical University.
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <h2>Skills</h2>

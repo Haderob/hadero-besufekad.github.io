@@ -1,48 +1,75 @@
 ---
 layout: default
 title: About
+permalink: /about/
 ---
 
-# About Me
+<h1 class="page-title">About</h1>
 
-I am Besufekad Tadele Hadero, an Ethiopian researcher passionate about building perception systems that enable robots and autonomous vehicles to understand and navigate complex environments safely.
+<p class="lead">I am an Ethiopian researcher working at the intersection of geometric vision, machine learning, and robot perception. My goal is to build perception systems that help robots and UAVs understand large, changing environments with dense, scalable, and reliable 3D representations.</p>
 
-My academic journey has taken me from Ethiopia to China, where I have developed expertise in computer vision, SLAM, and neural scene representations. I believe that high-fidelity perception must be coupled with compact, predictive world models if robots are to function safely beyond controlled environments.
+<section class="section">
+  <h2>Biography</h2>
+  <div class="panel">
+    <p>I am currently an M.S. candidate in Computer Science and Technology at Northwestern Polytechnical University in Xi'an, China, where I work with Prof. Yang Tao in the Robot Vision Lab. My research focuses on visual SLAM, Gaussian Splatting, monocular depth estimation, and neural scene representations for autonomous systems.</p>
+    <p>My recent work studies how feed-forward depth and pose priors can support Gaussian-based SLAM systems for UAV and outdoor mapping, especially when compute and memory are limited. I am particularly interested in robust 3D world models that support navigation, relocalization, motion generation, and intelligent decision-making.</p>
+  </div>
+</section>
 
-## Education
+<section class="section">
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__date">Sep 2023 - Jun 2026</div>
+      <h3>M.S. in Computer Science and Technology</h3>
+      <p>Northwestern Polytechnical University, Xi'an, China. Advisor: Prof. Yang Tao. GPA: 91.8/100, rank 3/29. Research topic: SLAM, three-dimensional visual perception, and computer vision.</p>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__date">Sep 2017 - Jul 2021</div>
+      <h3>B.S. in Mechatronics, with Honors</h3>
+      <p>University of Electronic Science and Technology of China, Chengdu, China. GPA: 3.78/4.0. Thesis: Fault Diagnosis Based on Vibration Analysis for Rolling Bearing.</p>
+    </div>
+  </div>
+</section>
 
-| Degree | Institution | Period | Details |
-|--------|-------------|--------|---------|
-| M.S. in Computer Science and Technology | Northwestern Polytechnical University (NWPU), China | Sep 2023 – Jun 2026 | Advisor: Prof. Yang Tao; GPA: 91.8/100 (Rank: 3/29); Robot Vision Lab |
-| B.S. in Mechatronics (with Honors) | University of Electronic Science and Technology of China (UESTC) | Sep 2017 – Jul 2021 | GPA: 3.78/4.0; Thesis: Fault Diagnosis Based on Vibration Analysis for Rolling Bearing |
+<section class="section">
+  <h2>Awards and Scholarships</h2>
+  <div class="grid grid--two">
+    <article class="card">
+      <h3>Honors</h3>
+      <ul>
+        <li>Outstanding Graduate, Northwestern Polytechnical University, 2026.</li>
+        <li>3rd Prize, UESTC Award for Academic Achievement, 2020.</li>
+        <li>3rd Prize, UESTC Award for Academic Achievement, 2018.</li>
+        <li>Excellent Student, Adama Science and Technology University, 2016.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Scholarships and Certificates</h3>
+      <ul>
+        <li>CSC Scholarship, 1st prize, Ministry of Education of China, 2023.</li>
+        <li>SUSTech School Scholarship, 1st prize, 2021.</li>
+        <li>Betre-Science Scholarship, Top 1%, Ministry of Science and Technology, Ethiopia, 2017.</li>
+        <li>Machine Learning Specialization certificates from Coursera, 2021.</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-## Awards & Honors
-
-- **2026** – Outstanding Graduate, Northwestern Polytechnical University
-- **2023** – CSC Scholarship (1st prize), Ministry of Education of China
-- **2021** – SUSTech School Scholarship (1st prize)
-- **2020** – 3rd Prize, UESTC Award for Academic Achievement
-- **2018** – 3rd Prize, UESTC Award for Academic Achievement
-- **2017** – Betre-Science Scholarship (Top 1%), Ministry of Science and Technology, Ethiopia
-- **2016** – Excellent Student, Adama Science and Technology University
-
-## Certificates
-
-- Advanced Learning Algorithms (Machine Learning Specialization), Coursera, 2021
-- Supervised Machine Learning: Regression and Classification, Coursera, 2021
-- Deep Learning Workshop Completion Certificate, UESTC, 2020
-
-## Skills
-
-- **Programming**: Python, C++, C
-- **Libraries & Frameworks**: OpenCV, PyTorch, Eigen, CMake, LaTeX
-- **Tools & Platforms**: Linux, COLMAP, MeshLab, Unreal Engine 4, Adobe Photoshop
-- **Equipment**: Drones, VR headsets, Arduino
-- **Languages**: English (Professional proficiency), Amharic (Native), Chinese (Basic proficiency)
-
-## Contact
-
-- **Email**: [haderob4@mail.nwpu.edu.cn](mailto:haderob4@mail.nwpu.edu.cn)
-- **Phone**: (+86) 132-2800-2068
-- **Address**: 1 Dongxiang Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China
-- **GitHub**: [@hadero-besufekad](https://github.com/hadero-besufekad)
+<section class="section">
+  <h2>Skills</h2>
+  <ul class="tag-list">
+    <li>Python</li>
+    <li>C++</li>
+    <li>C</li>
+    <li>PyTorch</li>
+    <li>OpenCV</li>
+    <li>Eigen</li>
+    <li>CMake</li>
+    <li>Linux</li>
+    <li>COLMAP</li>
+    <li>MeshLab</li>
+    <li>Unreal Engine 4</li>
+    <li>LaTeX</li>
+  </ul>
+</section>

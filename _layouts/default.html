@@ -5,51 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% seo %}
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-      {% if site.logo %}
-        <img src="{{ site.logo | absolute_url }}" alt="Profile" style="max-width: 180px; border-radius: 8px; margin-bottom: 16px;" />
-      {% endif %}
-      <p>{{ site.description | default: site.github.project_tagline }}</p>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-      <nav>
-        <ul class="nav-list">
-          {% for item in site.navigation %}
-            <li><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+        {% if site.logo %}
+          <img class="brand__photo" src="{{ site.logo | relative_url }}" alt="Portrait of {{ site.title }}">
+        {% endif %}
+        <span>
+          <span class="brand__name">{{ site.title }}</span>
+          <span class="brand__role">Robot Perception & Visual SLAM</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        {% for item in site.navigation %}
+          <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
       </nav>
+    </div>
+  </header>
 
-      <p style="margin-top: 24px;">
-        {% if site.github_username %}
-          <a href="https://github.com/{{ site.github_username }}">GitHub</a>{% if site.linkedin_username or site.email %} |{% endif %}
-        {% endif %}
-        {% if site.linkedin_username %}
-          <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>{% if site.email %} |{% endif %}
-        {% endif %}
-        {% if site.email %}
-          <a href="mailto:{{ site.email }}">Email</a>
-        {% endif %}
+  <main id="content" class="page-shell">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>{{ site.time | date: '%Y' }} {{ site.title }}. Built with Jekyll and hosted on GitHub Pages.</p>
+      <p>
+        <a href="mailto:{{ site.email }}">Email</a>
+        <span aria-hidden="true">/</span>
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+        <span aria-hidden="true">/</span>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
       </p>
-
-      {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-      {% endif %}
-    </header>
-
-    <section>
-      {{ content }}
-    </section>
-
-    <footer>
-      <p><small>Hosted on GitHub Pages — Theme based on <a href="https://github.com/pages-themes/minimal">Minimal</a></small></p>
-    </footer>
-  </div>
-  <script src="{{ '/assets/js/scale.fix.js' | absolute_url }}"></script>
+    </div>
+  </footer>
 </body>
 </html>

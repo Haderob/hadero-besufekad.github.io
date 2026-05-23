@@ -1,56 +1,57 @@
-# Besufekad T. Hadero — Academic Personal Website
+# Hadero Besufekad Tadele Academic Website
 
-This is a Jekyll-based academic personal website hosted on GitHub Pages.
+This is a Jekyll-based personal academic website designed for GitHub Pages.
 
-## Quick Setup
+## Structure
 
-### 1. Create Your GitHub Repository
+- `_config.yml`: site metadata, social links, and navigation.
+- `_layouts/default.html`: shared page layout.
+- `assets/css/style.scss`: custom visual design.
+- `index.md`, `about.md`, `research.md`, `publications.md`, `projects.md`, `cv.md`, `contact.md`: site pages.
+- `assets/files/CV_Besufekad_PhD.pdf`: downloadable CV.
+- `assets/img/profile.png`: profile image.
 
-1. Go to [GitHub](https://github.com) and create a new repository named **`hadero-besufekad.github.io`**
-   - Make it **public**
-   - Do not initialize with a README (you already have these files)
+## Run Locally
 
-### 2. Upload to GitHub
+1. Install Ruby and Bundler if they are not already installed.
+2. From this folder, install the GitHub Pages gems:
 
-Option A: Using Git
 ```bash
-git init
-git add .
-git commit -m "Initial website commit"
-git branch -M main
-git remote add origin https://github.com/hadero-besufekad/hadero-besufekad.github.io.git
-git push -u origin main
+bundle install
 ```
 
-Option B: Drag and drop
-1. Zip all files in this folder
-2. Go to your repository on GitHub
-3. Click "Add file" → "Upload files"
-4. Drag and drop all files
-5. Commit
+3. Start the local server:
 
-### 3. Enable GitHub Pages
+```bash
+bundle exec jekyll serve
+```
 
-1. Go to your repository on GitHub
-2. Click **Settings** → **Pages**
-3. Under "Build and deployment", select **Source: Deploy from a branch**
-4. Choose **Branch: main**, folder **/(root)**
-5. Click **Save**
+4. Open:
 
-Your site will be live at **`https://hadero-besufekad.github.io`** within a few minutes!
+```text
+http://localhost:4000
+```
 
-## Updating Your Site
+If GitHub Pages reports a different repository URL, update `url` in `_config.yml`.
 
-To update, simply edit the `.md` files and push changes to GitHub. GitHub Pages will automatically rebuild.
+## Deploy to GitHub Pages
 
-## Customization
+1. Create a public repository named `hadero-besufekad.github.io`.
+2. Upload or push the contents of this folder to the repository root.
+3. In GitHub, open `Settings` -> `Pages`.
+4. Under `Build and deployment`, choose `Deploy from a branch`.
+5. Select branch `main` and folder `/ (root)`.
+6. Save and wait for GitHub Pages to build the site.
 
-- Edit `_config.yml` to update social links or navigation
-- Add new pages by creating `.md` files and adding them to the navigation list in `_config.yml`
-- Edit `assets/css/style.scss` to change colors or fonts
+The site should be available at:
 
-## Need Help?
+```text
+https://hadero-besufekad.github.io
+```
 
-- [Jekyll documentation](https://jekyllrb.com/docs/)
-- [GitHub Pages documentation](https://docs.github.com/en/pages)
-- [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
+## Maintenance Notes
+
+- Edit Markdown pages to update content.
+- Replace `assets/files/CV_Besufekad_PhD.pdf` when the CV changes.
+- Replace `assets/img/profile.png` to update the profile photo.
+- Confirm and add a Google Scholar URL in `_config.yml` and `contact.md` when available.

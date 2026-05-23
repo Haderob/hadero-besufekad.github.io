@@ -1,70 +1,112 @@
 ---
 layout: default
 title: CV
+permalink: /cv/
 ---
 
-# Curriculum Vitae
+<h1 class="page-title">Curriculum Vitae</h1>
 
-[Download PDF](/assets/files/CV_Besufekad_PhD.pdf)
+<p class="lead">A concise web version of my CV. The full PDF is available below.</p>
 
-## Education
+<div class="actions">
+  <a class="button" href="{{ '/assets/files/CV_Besufekad_PhD.pdf' | relative_url }}">Download CV PDF</a>
+  <a class="button button--secondary" href="mailto:{{ site.email }}">Contact Me</a>
+</div>
 
-**M.S. in Computer Science and Technology** — Northwestern Polytechnical University (NWPU), Xi'an, China — *Sep 2023 – Jun 2026*
-- Advisor: Prof. Yang Tao, Robot Vision Lab
-- GPA: 91.8/100, Ranking: 3/29
-- Research: SLAM, 3D visual perception, computer vision
+<section class="section">
+  <h2>Education</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Period</th>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sep 2023 - Jun 2026</td>
+        <td>M.S. in Computer Science and Technology</td>
+        <td>Northwestern Polytechnical University, Xi'an, China</td>
+        <td>Advisor: Prof. Yang Tao. GPA: 91.8/100, rank 3/29. Research: SLAM, 3D visual perception, computer vision.</td>
+      </tr>
+      <tr>
+        <td>Sep 2017 - Jul 2021</td>
+        <td>B.S. in Mechatronics, with Honors</td>
+        <td>University of Electronic Science and Technology of China, Chengdu, China</td>
+        <td>GPA: 3.78/4.0. Thesis: Fault Diagnosis Based on Vibration Analysis for Rolling Bearing.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-**B.S. in Mechatronics (with Honors)** — University of Electronic Science and Technology of China (UESTC), Chengdu, China — *Sep 2017 – Jul 2021*
-- GPA: 3.78/4.0
-- Thesis: Fault Diagnosis Based on Vibration Analysis for Rolling Bearing
+<section class="section">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="timeline__item">
+      <div class="timeline__date">Oct 2025 - Present</div>
+      <h3>Internship, COLMAP Optimization for Efficient 3D Reconstruction</h3>
+      <p>Optimizing a Gaussian Splatting-based 3D reconstruction pipeline, testing handheld scanning devices, and tuning COLMAP parameters from collected video datasets.</p>
+    </div>
+    <div class="timeline__item">
+      <div class="timeline__date">Sep 2023 - Present</div>
+      <h3>Graduate Research, Robot Vision Lab</h3>
+      <p>Researching UAV SLAM with novel scene representations, learned depth and optical-flow priors, submap memory control, neural retrieval, geometric verification, and pose-graph optimization.</p>
+    </div>
+  </div>
+</section>
 
-## Publications
+<section class="section">
+  <h2>Publications</h2>
+  <div class="panel">
+    <ol>
+      <li><strong>Besufekad T. Hadero</strong>, Abdulmoiz Ahsan, Dongdong Li, and Tao Yang. "Beyond Implicit Representations: Exploring Gaussian Splatting for Next-Generation SLAM, Introduction and Review." <em>IEEE Internet of Things Journal</em>, accepted, 2025. DOI: <a href="https://doi.org/10.1109/JIOT.2025.3603861">10.1109/JIOT.2025.3603861</a>.</li>
+      <li><strong>Besufekad T. Hadero</strong>, JiaHao Liu, Tao Yang, Negaar Rezvanfar, and Ke Ma. "FFS-SLAM: Feed-Forward-Enhanced Submap Gaussian SLAM." Under review.</li>
+    </ol>
+  </div>
+</section>
 
-See the [Publications](/publications/) page for a full list.
+<section class="section">
+  <h2>Awards</h2>
+  <div class="grid grid--two">
+    <article class="card">
+      <h3>Honors</h3>
+      <ul>
+        <li>Outstanding Graduate, Northwestern Polytechnical University, 2026.</li>
+        <li>3rd Prize, UESTC Award for Academic Achievement, 2020.</li>
+        <li>3rd Prize, UESTC Award for Academic Achievement, 2018.</li>
+        <li>Excellent Student, Adama Science and Technology University, 2016.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Scholarships</h3>
+      <ul>
+        <li>CSC Scholarship, 1st prize, Ministry of Education of China, 2023.</li>
+        <li>SUSTech School Scholarship, 1st prize, 2021.</li>
+        <li>Betre-Science Scholarship, Top 1%, Ethiopia Government, 2017.</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-1. Hadero, B. T., Ahsan, A., Li, D., & Yang, T. (2025). Beyond Implicit Representations: Exploring Gaussian Splatting for Next-Generation SLAM. *IEEE Internet of Things Journal*.
-2. Hadero, B. T., Liu, J.-H., Yang, T., Rezvanfar, N., & Ma, K. FFS-SLAM: Feed-Forward-Enhanced Submap Gaussian SLAM. Under review.
-
-## Research Experience
-
-**Graduate Research Assistant** — Robot Vision Lab, NWPU — *Sep 2023 – Present*
-- Designed a Gaussian-based monocular SLAM framework with learned depth priors and bounded-memory submaps
-- Integrated deep learning models for dense optical flow and monocular depth estimation
-- Developed neural retrieval and pose-graph optimization for loop closure
-
-## Industry Experience
-
-**Intern** — Square Star Technology, Xi'an, China — *Oct 2025 – Present*
-- Optimized COLMAP-to-3DGS 3D reconstruction pipeline for speed
-- Integrated handheld scanning devices with ROS and Gaussian Splatting
-- Performed parameter tuning on causal video datasets for challenging scenarios
-
-## Teaching & Mentoring
-
-- Led a team of students in building a stereoscopic VR pipeline (2D-to-3D conversion)
-- Mentored junior lab members on SLAM fundamentals and 3D reconstruction
-
-## Awards & Honors
-
-- 2026 Outstanding Graduate, NWPU
-- 2023 CSC Scholarship (1st prize), Ministry of Education of China
-- 2021 SUSTech School Scholarship (1st prize)
-- 2020 & 2018 UESTC Award for Academic Achievement (3rd prize)
-- 2017 Betre-Science Scholarship (Top 1%), Ethiopia Government
-- 2016 Excellent Student, Adama Science and Technology University
-
-## Skills
-
-- **Programming**: Python, C++, C
-- **Libraries**: OpenCV, PyTorch, Eigen, CMake, LaTeX
-- **Tools**: Linux, COLMAP, MeshLab, Unreal Engine 4, Adobe Photoshop
-- **Equipment**: Drones, VR headsets, Arduino
-- **Languages**: English (Professional), Amharic (Native), Chinese (Basic)
-
-## Professional Service
-
-- Reviewer contributions to robotics and computer vision venues (in progress)
-
-## References
-
-Available upon request.
+<section class="section">
+  <h2>Skills</h2>
+  <ul class="tag-list">
+    <li>Python</li>
+    <li>C++</li>
+    <li>C</li>
+    <li>OpenCV</li>
+    <li>PyTorch</li>
+    <li>Eigen</li>
+    <li>CMake</li>
+    <li>Linux</li>
+    <li>COLMAP</li>
+    <li>MeshLab</li>
+    <li>Unreal Engine 4</li>
+    <li>Adobe Photoshop</li>
+    <li>Drone platforms</li>
+    <li>VR headsets</li>
+    <li>Arduino</li>
+  </ul>
+</section>

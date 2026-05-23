@@ -1,48 +1,52 @@
 ---
 layout: default
 title: Research
+permalink: /research/
 ---
 
-# Research
+<h1 class="page-title">Research</h1>
 
-My research bridges **classical geometric SLAM** and **modern neural scene representations** to build robust, scalable perception systems for autonomous robots and vehicles. I am particularly interested in closing the gap between high-fidelity generative mapping and real-time feed-forward inference.
+<p class="lead">My research centers on visual SLAM and robot perception for complex, unstructured environments. I combine classical geometric methods with learning-based depth, pose, and scene representation models to improve dense mapping, relocalization, and scalable 3D understanding.</p>
 
-## Current Focus
+<section class="section">
+  <h2>Master's Thesis</h2>
+  <div class="panel">
+    <h3>Research on UAV SLAM Based on Novel Scene Representations</h3>
+    <p>My thesis, titled in Chinese as <em>Research on UAV SLAM Based on Novel Scene Representations</em>, studies how modern scene representations can improve drone SLAM. The work introduces learned perception modules and neural scene representations to strengthen relocalization, reduce drift, and maintain scalable maps on resource-constrained platforms.</p>
+    <ul>
+      <li>Uses learned depth and optical-flow priors for geometry estimation from monocular video.</li>
+      <li>Partitions global maps into bounded submaps so memory remains controlled over long trajectories.</li>
+      <li>Uses global visual descriptors, neural retrieval, geometric verification, and pose-graph optimization for loop closure.</li>
+      <li>Explores novel-view rendering and Gaussian representations for relocalization and dense reconstruction.</li>
+    </ul>
+  </div>
+</section>
 
-### Safety-Aware Feed-Forward Monocular SLAM
+<section class="section">
+  <h2>Research Themes</h2>
+  <div class="grid grid--two">
+    <article class="card">
+      <h3>3D Gaussian Splatting for SLAM</h3>
+      <p>3D Gaussian Splatting provides an explicit, differentiable representation with high-quality real-time rendering. I study how to adapt it for SLAM through submaps, active-region management, duplicate pruning, and memory-aware optimization.</p>
+    </article>
+    <article class="card">
+      <h3>Feed-Forward Monocular Geometry</h3>
+      <p>Feed-forward depth, pose, and correspondence models can reduce the need for slow iterative optimization. I am interested in combining these predictions with geometric verification and SLAM back-ends.</p>
+    </article>
+    <article class="card">
+      <h3>Robust UAV Mapping</h3>
+      <p>Outdoor UAV trajectories can span large areas and suffer from low parallax, texture-poor regions, motion blur, and scale drift. My work targets dense RGB-only mapping under these constraints.</p>
+    </article>
+    <article class="card">
+      <h3>Multimodal and Embodied Perception</h3>
+      <p>I am interested in how robust 3D world models can support navigation, motion generation, and higher-level decision-making, including future work on multimodal and Vision-Language-Action systems.</p>
+    </article>
+  </div>
+</section>
 
-My master's thesis work focuses on developing a **Gaussian-based monocular SLAM framework** that:
-
-- Injects **learned depth priors** for metric-scale stability
-- Partitions global maps into **bounded-memory submaps** for real-time performance on constrained hardware
-- Integrates **feed-forward depth and pose networks** (VGGT, DUSt3R) to reduce initialization bottlenecks
-- Targets **30 fps** operation through lightweight, decoupled geometry and appearance updates
-
-### Research Themes
-
-**1. Real-Time 3D Gaussian Splatting for SLAM**
-
-3D Gaussian Splatting (3DGS) offers an explicit, differentiable scene representation that maintains the visual fidelity of NeRFs while enabling direct rendering. I investigate how to make 3DGS-based SLAM truly real-time and robust on standard robotic hardware, including submap partitioning, active-region management, and memory compression.
-
-**2. Feed-Forward Perception for Geometry**
-
-Feed-forward models such as DUSt3R, MASt3R, and VGGT achieve real-time depth and pose estimation without costly iterative optimization. I study how to fuse these predictions with generative mapping to obtain both speed and geometric fidelity.
-
-**3. Robustness Under Challenging Conditions**
-
-Real-world SLAM must survive illumination changes, dynamic motion, and scene appearance variation. My work explores:
-- Illumination-invariant feature matching for day-night operation
-- Dynamic-object masking via rendering residuals and optical-flow inconsistency
-- Uncertainty-aware weighting to down-weight unreliable observations
-
-**4. Multi-Sensor Fusion**
-
-To resolve monocular scale ambiguity and improve reliability, I am interested in tightly coupling **LiDAR and IMU** with monocular+3DGS front ends through uncertainty-weighted factor graphs and online calibration.
-
-## Long-Term Vision
-
-I aim to advance monocular SLAM from "fast but fragile" to **fast, robust, and uncertainty-aware** — delivering dense, temporally consistent representations that enhance downstream state estimation, navigation, and safe decision-making in autonomous systems.
-
----
-
-*I am actively seeking PhD opportunities for Fall 2026 to continue this research.*
+<section class="section">
+  <h2>Current Direction</h2>
+  <div class="panel">
+    <p>I am actively seeking PhD opportunities for Fall 2026 in robot perception, visual SLAM, 3D vision, embodied intelligence, and related areas. I am especially interested in research that connects robust real-time 3D perception with decision-making in physical systems.</p>
+  </div>
+</section>

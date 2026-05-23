@@ -13,6 +13,7 @@
   --accent-soft: #d9efeb;
   --gold: #b7791f;
   --shadow: 0 18px 45px rgba(23, 32, 38, 0.08);
+  --shadow-lift: 0 24px 55px rgba(23, 32, 38, 0.12);
   --radius: 8px;
 }
 
@@ -20,19 +21,31 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0) 360px),
+    var(--bg);
   color: var(--ink);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.7;
 }
 
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
 a {
   color: var(--accent-dark);
   text-decoration: none;
+  text-underline-offset: 0.2em;
 }
 
 a:hover {
@@ -63,6 +76,7 @@ a:hover {
   background: rgba(246, 244, 239, 0.94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
+  box-shadow: 0 8px 24px rgba(23, 32, 38, 0.04);
 }
 
 .site-header__inner,
@@ -86,10 +100,13 @@ a:hover {
   gap: 0.8rem;
   color: var(--ink);
   min-width: 220px;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
 .brand:hover {
+  color: var(--accent-dark);
   text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .brand__photo {
@@ -99,6 +116,12 @@ a:hover {
   object-fit: cover;
   border: 2px solid var(--surface);
   box-shadow: 0 4px 16px rgba(23, 32, 38, 0.16);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.brand:hover .brand__photo {
+  box-shadow: 0 8px 20px rgba(23, 32, 38, 0.18);
+  transform: scale(1.04);
 }
 
 .brand__name,
@@ -131,6 +154,8 @@ a:hover {
   font-weight: 650;
   padding: 0.55rem 0.7rem;
   border-radius: var(--radius);
+  position: relative;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
 .site-nav a:hover,
@@ -138,6 +163,7 @@ a:hover {
   background: var(--accent-soft);
   color: var(--accent-dark);
   text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .page-shell {
@@ -145,6 +171,7 @@ a:hover {
   float: none;
   min-height: calc(100vh - 160px);
   padding: clamp(34px, 5vw, 58px) 0 60px;
+  animation: page-in 420ms ease both;
 }
 
 .hero {
@@ -158,10 +185,22 @@ a:hover {
 .hero__content {
   min-width: 0;
   padding: clamp(28px, 5vw, 52px);
-  background: linear-gradient(135deg, #ffffff 0%, #edf7f4 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(237, 247, 244, 0.96) 100%);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__content::before {
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .eyebrow {
@@ -203,11 +242,23 @@ a:hover {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: 0 12px 35px rgba(23, 32, 38, 0.05);
+  transition: border-color 180ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
 
 .hero__aside {
   padding: 24px;
   width: 100%;
+  position: sticky;
+  top: 104px;
+}
+
+.card:hover,
+.panel:hover,
+.publication:hover,
+.hero__aside:hover {
+  border-color: rgba(15, 118, 110, 0.32);
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-3px);
 }
 
 .profile-large {
@@ -216,6 +267,11 @@ a:hover {
   object-fit: cover;
   border-radius: var(--radius);
   margin-bottom: 18px;
+  transition: transform 240ms ease;
+}
+
+.hero__aside:hover .profile-large {
+  transform: scale(1.015);
 }
 
 .meta-list {
@@ -261,11 +317,14 @@ a:hover {
   font-size: 0.86rem;
   font-weight: 700;
   padding: 0.35rem 0.55rem;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .social-links a:hover {
   background: var(--accent-soft);
+  border-color: rgba(15, 118, 110, 0.3);
   text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .actions {
@@ -285,13 +344,16 @@ a:hover {
   font-weight: 750;
   min-height: 44px;
   padding: 0.65rem 1rem;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
 .button:hover {
   background: var(--accent-dark);
   border-color: var(--accent-dark);
   color: #fff;
+  box-shadow: 0 12px 24px rgba(15, 78, 74, 0.18);
   text-decoration: none;
+  transform: translateY(-2px);
 }
 
 .button--secondary {
@@ -310,6 +372,7 @@ a:hover {
   width: 100%;
   margin-top: clamp(34px, 5vw, 54px);
   padding: 0;
+  scroll-margin-top: 110px;
 }
 
 h2,
@@ -321,6 +384,17 @@ h3 {
 h2 {
   font-size: 1.65rem;
   margin: 0 0 1rem;
+  position: relative;
+}
+
+h2::after {
+  background: var(--accent);
+  border-radius: 999px;
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 0.45rem;
+  width: 44px;
 }
 
 h3 {
@@ -374,6 +448,13 @@ h3 {
   font-size: 0.82rem;
   font-weight: 700;
   padding: 0.28rem 0.65rem;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.tag-list li:hover,
+.tag:hover {
+  background: #c7e6df;
+  transform: translateY(-1px);
 }
 
 .timeline {
@@ -385,6 +466,12 @@ h3 {
 
 .timeline__item {
   position: relative;
+  padding: 0.35rem 0 0.35rem 0.25rem;
+  transition: transform 180ms ease;
+}
+
+.timeline__item:hover {
+  transform: translateX(3px);
 }
 
 .timeline__item::before {
@@ -397,6 +484,12 @@ h3 {
   position: absolute;
   top: 0.45rem;
   width: 12px;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.timeline__item:hover::before {
+  background: var(--gold);
+  transform: scale(1.12);
 }
 
 .timeline__date {
@@ -444,9 +537,33 @@ td {
   vertical-align: top;
 }
 
+tr:hover td {
+  background: rgba(217, 239, 235, 0.22);
+}
+
 th {
   background: var(--surface-soft);
   font-weight: 800;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button:focus-visible,
+.site-nav a:focus-visible,
+.social-links a:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.32);
+  outline-offset: 3px;
 }
 
 .site-footer {
@@ -489,6 +606,7 @@ th {
 
   .hero__aside {
     max-width: 520px;
+    position: static;
   }
 }
 
@@ -531,5 +649,20 @@ th {
   .card,
   .publication {
     padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

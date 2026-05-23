@@ -12,7 +12,7 @@ permalink: /research/
   <h2>Master's Thesis</h2>
   <div class="panel">
     <h3>Research on UAV SLAM Based on Novel Scene Representations</h3>
-    <p>My thesis, titled in Chinese as <em>Research on UAV SLAM Based on Novel Scene Representations</em>, studies how modern scene representations can improve drone SLAM. The work introduces learned perception modules and neural scene representations to strengthen relocalization, reduce drift, and maintain scalable maps on resource-constrained platforms.</p>
+    <p>My thesis, titled <em>Research on UAV SLAM Based on Novel Scene Representations</em>, studies how modern scene representations can improve drone SLAM. The work introduces learned perception modules and neural scene representations to strengthen relocalization, reduce drift, and maintain scalable maps on resource-constrained platforms.</p>
     <ul>
       <li>Uses learned depth and optical-flow priors for geometry estimation from monocular video.</li>
       <li>Partitions global maps into bounded submaps so memory remains controlled over long trajectories.</li>
